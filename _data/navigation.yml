@@ -1,0 +1,12 @@
+main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Supervision"
+    url: /supervision/
+  - title: "Talks"
+    url: /talks/
+  - title: "Academic Service"
+    url: /service/
+    
