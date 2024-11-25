@@ -1,3 +1,15 @@
+@inproceedings{beyer_can_2017,
+  address = {Prague, Czech Republic},
+  title = {Can {Out}-of-the-box {NMT} {Beat} a {Domain}-trained {Moses} on {Technical} {Data}?},
+  url_Paper = {https://ufal.mff.cuni.cz/eamt2017/user-project-product-papers/papers/user/EAMT2017_paper_32.pdf},
+  abstract = {In the last year, we have seen a lot of evidence about the superiority of neural machine translation approaches (NMT) over phrase-based statistical approaches (PBMT). This trend has shown for the general domain at public competitions such as the WMT challenges as well as in the obvious quality increase in online translation services that have changed their technology. In this paper, we take the perspective of an LSP. The questions we want to answer with this study is if now is already the time to invest in the new technology. To answer this question, we have collected evidence as to whether an existing stateof-the-art NMT system for the general domain can already compete with a domaintrained and optimised Moses (PBMT) system or if it is maybe already better. As it is well known that automatic quality measures are not reliable for comparing the performance of different system types, we have performed a detailed manual evaluation based on a test suite of domain segments.},
+  language = {en},
+  booktitle = {Proceedings for {EAMT} 2017 {User} {Studies} and {Project}/{Product} {Descriptions}},
+  author = {Beyer, Anne and Macketanz, Vivien and Burchardt, Aljoscha and Williams, Philip},
+  year = {2017},
+  pages = {41--46}
+}
+
 @inproceedings{beyer_embedding_2020,
   author    = {Beyer, Anne  and  Kauermann, Göran  and  Schütze, Hinrich},
   title     = {Embedding Space Correlation as a Measure of Domain Similarity},
@@ -7,4 +19,42 @@
   pages     = {2431--2439},
   abstract  = {Prior work has determined domain similarity using text-based features of a corpus. However, when using pre-trained word embeddings, the underlying text corpus might not be accessible anymore. Therefore, we propose the CCA measure, a new measure of domain similarity based directly on the dimension-wise correlations between corresponding embedding spaces. Our results suggest that an inherent notion of domain can be captured this way, as we are able to reproduce our findings for different domain comparisons for English, German, Spanish and Czech as well as in cross-lingual comparisons. We further find a threshold at which the CCA measure indicates that two corpora come from the same domain in a monolingual setting by applying permutation tests. By evaluating the usability of the CCA measure in a domain adaptation application, we also show that it can be used to determine which corpora are more similar to each other in a cross-domain sentiment detection task.},
   url_Paper = {https://www.aclweb.org/anthology/2020.lrec-1.296.pdf}
+}
+
+@inproceedings{beyer_incoherence_2021,
+    author = {Beyer, Anne and Lo\'aiciga, Sharid and Schlangen, David},
+    year = {2021},
+    title = {Is {Incoherence} {Surprising}? {Targeted} {Evaluation} of {Coherence} {Prediction} from {Language} {Models}},
+    abstract = {Coherent discourse is distinguished from a mere collection of utterances by the satisfaction of a diverse set of constraints, for example choice of expression, logical relation between denoted events, and implicit compatibility with world-knowledge. Do neural language models encode such constraints? We design an extendable set of test suites addressing different aspects of discourse and dialogue coherence. Unlike most previous coherence evaluation studies, we address specific linguistic devices beyond sentence order perturbations, allowing for a more fine-grained analysis of what constitutes coherence and what neural models trained on a language modelling objective do encode. Extending the targeted evaluation paradigm for neural language models (Marvin and Linzen, 2018) to phenomena beyond syntax, we show that this paradigm is equally suited to evaluate linguistic qualities that contribute to the notion of coherence.},
+    booktitle = {Proceedings of the 2021 {Conference} of the {North} {A}merican {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}},
+    publisher = {Association for {Computational} {Linguistics}},
+    url_Paper = {https://aclanthology.org/2021.naacl-main.328/},
+    url_Video = {https://screencast-o-matic.com/watch/crhXrYVfqo7},
+    address = {Online}
+}
+
+@inproceedings{loaiciga-etal-2022-new,
+    title = "New or Old? Exploring How Pre-Trained Language Models Represent Discourse Entities",
+    author = "Lo{\'a}iciga, Sharid  and
+      Beyer, Anne  and
+      Schlangen, David",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.73",
+    pages = "875--886",
+    abstract = "Recent research shows that pre-trained language models, built to generate text conditioned on some context, learn to encode syntactic knowledge to a certain degree. This has motivated researchers to move beyond the sentence-level and look into their ability to encode less studied discourse-level phenomena. In this paper, we add to the body of probing research by investigating discourse entity representations in large pre-trained language models in English. Motivated by early theories of discourse and key pieces of previous work, we focus on the information-status of entities as discourse-new or discourse-old. We present two probing models, one based on binary classification and another one on sequence labeling. The results of our experiments show that pre-trained language models do encode information on whether an entity has been introduced before or not in the discourse. However, this information alone is not sufficient to find the entities in a discourse, opening up interesting questions about the definition of entities for future work."
+}
+
+@misc{galetzka2023neuralconversationmodelsrein,
+      title={Neural Conversation Models and How to Rein Them in: A Survey of Failures and Fixes}, 
+      author={Fabian Galetzka and Anne Beyer and David Schlangen},
+      year={2023},
+      eprint={2308.06095},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2308.06095}, 
+      abstract={Recent conditional language models are able to continue any kind of text source in an often seemingly fluent way. This fact encouraged research in the area of open-domain conversational systems that are based on powerful language models and aim to imitate an interlocutor by generating appropriate contributions to a written dialogue. From a linguistic perspective, however, the complexity of contributing to a conversation is high. In this survey, we interpret Grice's maxims of cooperative conversation from the perspective of this specific research area and systematize the literature under the aspect of what makes a contribution appropriate: A neural conversation model has to be fluent, informative, consistent, coherent, and follow social norms. In order to ensure these qualities, recent approaches try to tame the underlying language models at various intervention points, such as data, training regime or decoding. Sorted by these categories and intervention points, we discuss promising attempts and suggest novel ways for future research.}
 }
